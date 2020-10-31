@@ -1,4 +1,4 @@
 config.py
 __pycache__
-.gitignore.txt
+.gitignore
 .ipynb_checkpoints
