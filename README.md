@@ -1,4 +1,4 @@
-# Top_Cities_To_Own_Electric_Car
+# Top Cities To Own and Electric Car
 
 ## Census
 
@@ -23,6 +23,20 @@ Our program starts by executing the Census_Population.ipynb file in the Census f
 
 ## Weather
 
+The Weather notebook picks up where the census notebook leaves off by performing the following operations:
+
+1. Loads the census_city.csv file from the census notebook into the cities_pd dataframe.
+2. Cleans the dataframe by deleting the "Unnamed: 0" column,
+3. Create a blank Max Temp and a Min temp column in the cities_pd df.
+4. Loops through the cities_pd df and makes an API call to the OpenWeather API, pulling max and min temp for each city and updating the appropriate fields in the cities_pd df with those values. The program also prints a log of the sucessful and unsucessful responses to the screen.
+5. Saves a csv file of the cities_pd df.
+6. Creates weather_cities_pd from the cities_pd data and excludes cities where max temp is greater than 80 degrees F and where min temp is less than 60 degrees F.
+7. Creates a weather_city_final.csv file in the Resources folder to be used in the OpenCharge notebook.
+8. Creates a heatmap on the weather_cities_pd df using max temp as the weight.
+9. Creates a box plot max temp and min temp.
+10. Calculates IQR, upper and lower limits, and outliers for min temp.
+11. Generates a regression test for population vs min temp.
+12. Generates a regression test for population vs max temp.  
 
 
 ## OpenCharge
@@ -39,5 +53,10 @@ The open_charge.ipynb notebook does the following:
 8. Creates a heatmap of the station count per mile
 9. Creates a histogram showing how widespread charging infrastructue is in cities
 10. Creates a plot comparing station count to population
-11. Creats a histogram showing stations per mile by city
-=======
+11. Creates a histogram showing stations per mile by city
+
+Analysis from OpenCharge info:
+- Of the cities evaluated for the number of charging stations, 9 of the top 10 are in California (mostly in the Los Angeles and San Francisco metro areas)
+- The same cities in California also have the highest station density per mile
+- Cities on the East and Southwest coasts have many more charging stations available versus cities in the Midwest or Northwest
+
