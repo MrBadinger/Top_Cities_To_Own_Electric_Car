@@ -17,7 +17,9 @@ Our program starts by executing the Census_Population.ipynb file in the Census f
 10. Prints a log of what was loaded and what was not loaded to the screen.
 11. Creates a df called final_city_df which holds columns for City_State, Clean_City, Population, Lat, and Lng.
 12. Generates a csv file of the final_city_df to the Resources folder.
-13. Creates a heat map of the cities weighted by population.
+13. Generates a bar chart of the top 10 cities by largest population
+14. Creates a heat map of the cities weighted by population.
+15. Generates a boxplot of population.
 
 ## Weather
 
@@ -38,3 +40,4 @@ The open_charge.ipynb notebook does the following:
 9. Creates a histogram showing how widespread charging infrastructue is in cities
 10. Creates a plot comparing station count to population
 11. Creats a histogram showing stations per mile by city
+=======
