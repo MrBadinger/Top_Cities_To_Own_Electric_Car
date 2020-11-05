@@ -17,10 +17,27 @@ Our program starts by executing the Census_Population.ipynb file in the Census f
 10. Prints a log of what was loaded and what was not loaded to the screen.
 11. Creates a df called final_city_df which holds columns for City_State, Clean_City, Population, Lat, and Lng.
 12. Generates a csv file of the final_city_df to the Resources folder.
-13. Creates a heat map of the cities weighted by population.
+13. Generates a bar chart of the top 10 cities by largest population
+14. Creates a heat map of the cities weighted by population.
+15. Generates a boxplot of population.
 
 ## Weather
 
 
 
 ## OpenCharge
+Now that we have narrowed down our cities list to those with weather conditions suitable for electric cars, we wanted to guage how much infrastructure exists to support electric car owners. A key part of this infrastructure is charging stations and how widespread they are throughout a city. We located the Open Charge Map API which tracks charging station data across the globe.
+
+The open_charge.ipynb notebook does the following:
+1. Loads the list of cities that meet the weather parameters
+2. Loads the lat/longs into lists that can be used in the query for the OpenCharge Map API
+3. Loops through the lat/long pairs for each city and retrieves a list of all charging stations in a 50-mile radius
+4. Loads the station counts found into a dataframe that contains the census and weather data
+5. Calculated 'Stations per Mile' and added to the dataframe
+6. Sorted the data frame by the number of stations per city to help organize the generated visuals
+7. Creates a heatmap of the station count by city
+8. Creates a heatmap of the station count per mile
+9. Creates a histogram showing how widespread charging infrastructue is in cities
+10. Creates a plot comparing station count to population
+11. Creats a histogram showing stations per mile by city
+=======
