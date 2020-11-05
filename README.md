@@ -39,5 +39,10 @@ The open_charge.ipynb notebook does the following:
 8. Creates a heatmap of the station count per mile
 9. Creates a histogram showing how widespread charging infrastructue is in cities
 10. Creates a plot comparing station count to population
-11. Creats a histogram showing stations per mile by city
-=======
+11. Creates a histogram showing stations per mile by city
+
+Analysis from OpenCharge info:
+- Of the cities evaluated for the number of charging stations, 9 of the top 10 are in California (mostly in the Los Angeles and San Francisco metro areas)
+- The same cities in California also have the highest station density per mile
+- Cities on the East and Southwest coasts have many more charging stations available versus cities in the Midwest or Northwest
+
