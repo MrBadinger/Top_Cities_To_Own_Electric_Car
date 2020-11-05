@@ -44,5 +44,5 @@ The open_charge.ipynb notebook does the following:
 Analysis from OpenCharge info:
 - Of the cities evaluated for the number of charging stations, 9 of the top 10 are in California (mostly in the Los Angeles and San Francisco metro areas)
 - The same cities in California also have the highest station density per mile
-- Cities on the East and Southwest coasts have many more charging stations available versus cities in the Midwest or Northwest
+- There are only a handful of cities with more than 1,000 chargers; most cities evaluated had 700 or less
 
