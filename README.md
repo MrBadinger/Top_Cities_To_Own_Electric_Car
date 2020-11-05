@@ -19,7 +19,7 @@ Our program starts by executing the Census_Population.ipynb file in the Census f
 12. Generates a csv file of the final_city_df to the Resources folder.
 13. Generates a bar chart of the top 10 cities by largest population
 14. Creates a heat map of the cities weighted by population.
-15. Generates a boc=xplot of population.
+15. Generates a boxplot of population.
 
 ## Weather
 
